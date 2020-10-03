@@ -1,1 +1,2 @@
 # tutorialOnlyDesktops
+# tutorialNoPhone
