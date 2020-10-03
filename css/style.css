@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.tutorial {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    opacity: 0.5;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: rgba(29,33,61,0.5);
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+.logo {
+    width: 155px;
+}
+.logo img {
+    width: 30px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px;
+}
+nav ul li:hover {
+    background-color:  rgba(29,33,61,0.5);
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+.entry-user {
+    width: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.name-user {
+    width: 35px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.sidebar {
+    width: 155px;
+    height: 100vh;
+    background: rgba(29,31,58,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search-icon {
+    width: 20px;
+    display: block;
+    margin: 120px auto 0;
+    cursor: pointer;
+}
+.input-search {
+    width: 120px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline:none;
+    visibility: hidden;
+}
+.actionInputOne {
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.social-links {
+    width: 20px;
+    display: block;
+    margin: 220px auto 0;
+    text-align: center;
+}
+.social-links img {
+    height: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.face-img {
+    position: absolute;
+    color: #fff;
+    width: 160px;
+    margin-left: 30px;
+    text-align: left;
+    visibility: hidden;
+}
+.social-links-hover:hover .face-img {
+    visibility: visible;
+}
+
+.info-icon-text{
+    position: absolute;
+    box-sizing: border-box;
+    width: 300px;
+    background-color: rgba(29,31,58,0.7);
+    border-radius: 20px;
+    left: 60px;
+    bottom: 60px;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 20px;
+    visibility: hidden;
+    
+}
+.info-icon-text.active {
+    visibility: visible;
+    bottom: 70px;
+    transition: all .2s;
+  }
+.info-icon {
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.msg-container {
+    width: 600px;
+    height: 280px;
+    position: absolute;
+    left: 14%;
+    top: 57%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.msg-col {
+    width: 600px;
+    height: 280px;
+}
+.msg-col h1 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.msg-col p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+#slider {
+    display: inline-flex;
+    transition: 0.5s;
+}
+
+@media (min-width: 850px) {
+    .msg-container {
+        width: 500px;
+        left: 20%;
+    }
+    .msg-col {
+        width: 500px;
+    }
+    .msg-col h1 {
+        font-size: 60px;
+    }
+}
+@media (min-width: 1200px) {
+    .msg-container {
+        width: 600px;
+        left: 14%;
+    }
+    .msg-col {
+        width: 600px;
+    }
+    .msg-col h1 {
+        font-size: 80px;
+    }
+}
+.msg-col a {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    background: #fff;
+    font-size: 15px;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+.controller {
+    width: 1px;
+    height: 320px;
+    display: block;
+    background: #c0c0c0;
+    position: absolute;
+    top: 55%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+#liner1,#liner2,#liner3,#liner4 {
+    height: 10px;
+    border-radius: 50%;
+    width: 10px;
+    cursor: pointer;
+    background: #fff;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+/*calc(280px/5)*/
+}
+#liner1 {
+    margin: 0;
+}
+#liner2,#liner3,#liner4 {
+    margin: calc(280px/3) 0;
+}
+
+
+#active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
